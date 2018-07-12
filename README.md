@@ -1,6 +1,6 @@
 # node npm ng info
 
-As of July 12, 2018, this web page indicates the following version of Node.js and npm are required.  I do not know if that is only in the context of Angular 6, or if it applies to any earlier versions of Angular also.
+As of July 12, 2018, the web page https://angular.io/guide/quickstart indicates the following versions of Node.js and npm are required.  I do not know if that is only in the context of Angular 6, or if it applies to any earlier versions of Angular also.
 
 Verify that you are running at least Node.js version 8.x or greater and npm version 5.x or greater by running node -v and npm -v in a terminal/console window. Older versions produce errors, but newer versions are fine.
 
