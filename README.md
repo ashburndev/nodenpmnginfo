@@ -48,6 +48,110 @@
         
     ashburndave@dphnuc4:~$ 
 
+    ashburndave@dphnuc4:~/ngprojects$ mg mew hello-cli
+
+    added 1103 packages in 36.853s
+        Successfully initialized git.
+    ashburndave@dphnuc4:~/ngprojects$ 
+    ashburndave@dphnuc4:~/ngprojects$ cd hello-cli
+    ashburndave@dphnuc4:~/ngprojects/hello-cli$ 
+    ashburndave@dphnuc4:~/ngprojects/hello-cli$ ls -latr
+    total 436
+    -rw-r--r--   1 ashburndave ashburndave   2805 Jul 12 05:26 tslint.json
+    -rw-r--r--   1 ashburndave ashburndave    384 Jul 12 05:26 tsconfig.json
+    -rw-r--r--   1 ashburndave ashburndave   1025 Jul 12 05:26 README.md
+    -rw-r--r--   1 ashburndave ashburndave    503 Jul 12 05:26 .gitignore
+    -rw-r--r--   1 ashburndave ashburndave    245 Jul 12 05:26 .editorconfig
+    -rw-r--r--   1 ashburndave ashburndave   3575 Jul 12 05:26 angular.json
+    drwxr-xr-x   3 ashburndave ashburndave   4096 Jul 12 05:26 ..
+    drwxr-xr-x   5 ashburndave ashburndave   4096 Jul 12 05:26 src
+    drwxr-xr-x   3 ashburndave ashburndave   4096 Jul 12 05:26 e2e
+    drwxr-xr-x 808 ashburndave ashburndave  32768 Jul 12 05:27 node_modules
+    -rw-r--r--   1 ashburndave ashburndave   1314 Jul 12 05:27 package.json
+    -rw-r--r--   1 ashburndave ashburndave 362565 Jul 12 05:27 package-lock.json
+    drwxr-xr-x   6 ashburndave ashburndave   4096 Jul 12 05:27 .
+    drwxr-xr-x   8 ashburndave ashburndave   4096 Jul 12 05:27 .git
+    ashburndave@dphnuc4:~/ngprojects/hello-cli$ 
+    ashburndave@dphnuc4:~/ngprojects/hello-cli$ cat README.md 
+    # HelloCli
+
+    This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+
+    ## Development server
+
+    Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+    ## Code scaffolding
+
+    Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+    ## Build
+
+    Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+    ## Running unit tests
+
+    Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+    ## Running end-to-end tests
+
+    Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+    ## Further help
+
+    To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    ashburndave@dphnuc4:~/ngprojects/hello-cli$ 
+    ashburndave@dphnuc4:~/ngprojects/hello-cli$ cat package.json 
+    {
+      "name": "hello-cli",
+      "version": "0.0.0",
+      "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build",
+        "test": "ng test",
+        "lint": "ng lint",
+        "e2e": "ng e2e"
+      },
+      "private": true,
+      "dependencies": {
+        "@angular/animations": "^6.0.3",
+        "@angular/common": "^6.0.3",
+        "@angular/compiler": "^6.0.3",
+        "@angular/core": "^6.0.3",
+        "@angular/forms": "^6.0.3",
+        "@angular/http": "^6.0.3",
+        "@angular/platform-browser": "^6.0.3",
+        "@angular/platform-browser-dynamic": "^6.0.3",
+        "@angular/router": "^6.0.3",
+        "core-js": "^2.5.4",
+        "rxjs": "^6.0.0",
+        "zone.js": "^0.8.26"
+      },
+      "devDependencies": {
+        "@angular/compiler-cli": "^6.0.3",
+        "@angular-devkit/build-angular": "~0.6.8",
+        "typescript": "~2.7.2",
+        "@angular/cli": "~6.0.8",
+        "@angular/language-service": "^6.0.3",
+        "@types/jasmine": "~2.8.6",
+        "@types/jasminewd2": "~2.0.3",
+        "@types/node": "~8.9.4",
+        "codelyzer": "~4.2.1",
+        "jasmine-core": "~2.99.1",
+        "jasmine-spec-reporter": "~4.2.1",
+        "karma": "~1.7.1",
+        "karma-chrome-launcher": "~2.2.0",
+        "karma-coverage-istanbul-reporter": "~2.0.0",
+        "karma-jasmine": "~1.1.1",
+        "karma-jasmine-html-reporter": "^0.2.2",
+        "protractor": "~5.3.0",
+        "ts-node": "~5.0.1",
+        "tslint": "~5.9.1"
+      }
+    }
+    ashburndave@dphnuc4:~/ngprojects/hello-cli$ 
+
 
 ## nvm (node version manager)
 
