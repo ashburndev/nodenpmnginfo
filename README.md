@@ -1,5 +1,9 @@
 # node npm ng info
 
+As of July 12, 2018, this web page indicates the following version of Node.js and npm are required.  I do not know if that is only in the context of Angular 6, or if it applies to any earlier versions of Angular also.
+
+Verify that you are running at least Node.js version 8.x or greater and npm version 5.x or greater by running node -v and npm -v in a terminal/console window. Older versions produce errors, but newer versions are fine.
+
     ashburndave@dphnuc4:~$ node --version
     v10.1.0
     ashburndave@dphnuc4:~$ npm --version
@@ -48,7 +52,7 @@
         
     ashburndave@dphnuc4:~$ 
 
-    ashburndave@dphnuc4:~/ngprojects$ mg mew hello-cli
+    ashburndave@dphnuc4:~/ngprojects$ ng mew hello-cli
 
     added 1103 packages in 36.853s
         Successfully initialized git.
@@ -185,8 +189,8 @@ https://github.com/creationix/nvm
 
 I could have downloaded the node distribution from these URLs (the first is for LTS, long term support, versions)
 
-https://nodejs.org/en/download/
-https://nodejs.org/en/download/current/
+    https://nodejs.org/en/download/
+    https://nodejs.org/en/download/current/
 
     ashburndave@dphnuc4:~/Downloads$ ls -latr | tail
     -rw-rw-r--  1 ashburndave ashburndave         40 Jul  8 09:46 apache-maven-3.5.4-bin.zip.sha1
