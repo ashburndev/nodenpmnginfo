@@ -373,4 +373,73 @@ Install (or reinstall) Angular 5 globally before creating a new Angular 6 projec
 
 ## sample angular 5 project (created with angular-cli)
 
+        ashburndave@dphnuc4:~$ npm install -g @angular/cli@1
+        npm WARN registry Using stale data from https://registry.npmjs.org/ because the host is inaccessible -- are you offline?
+        npm WARN registry Using stale package data from https://registry.npmjs.org/ due to a request error during revalidation.
+        [..................] \ fetchMetadata: sill fetchPackageMetaData error for node-modules-path@^1.0.0 request to https://registry.npmjs.org/node-modules-path fail
+
+        ashburndave@dphnuc4:~$ 
+        ashburndave@dphnuc4:~$ npm install -g @angular/cli@1
+        npm WARN registry Using stale data from https://registry.npmjs.org/ because the host is inaccessible -- are you offline?
+        npm WARN registry Using stale package data from https://registry.npmjs.org/ due to a request error during revalidation.
+        npm ERR! code ENOTFOUND
+        npm ERR! errno ENOTFOUND
+        npm ERR! network request to https://registry.npmjs.org/@ngtools%2fjson-schema failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+        npm ERR! network This is a problem related to network connectivity.
+        npm ERR! network In most cases you are behind a proxy or have bad network settings.
+        npm ERR! network 
+        npm ERR! network If you are behind a proxy, please make sure that the
+        npm ERR! network 'proxy' config is set properly.  See: 'npm help config'
+
+        npm ERR! A complete log of this run can be found in:
+        npm ERR!     /home/ashburndave/.npm/_logs/2018-07-15T13_05_34_110Z-debug.log
+        ashburndave@dphnuc4:~$ 
+        ashburndave@dphnuc4:~$ angular version
+        angular: command not found
+        ashburndave@dphnuc4:~$ 
+        ashburndave@dphnuc4:~$ node --version
+        v10.1.0
+        ashburndave@dphnuc4:~$ npm --version
+        5.6.0
+        ashburndave@dphnuc4:~$ 
+        ashburndave@dphnuc4:~$ npm install -g @angular/cli@6
+        /home/ashburndave/.nvm/versions/node/v10.1.0/bin/ng -> /home/ashburndave/.nvm/versions/node/v10.1.0/lib/node_modules/@angular/cli/bin/ng
+
+        > @angular/cli@6.0.8 postinstall /home/ashburndave/.nvm/versions/node/v10.1.0/lib/node_modules/@angular/cli
+        > node ./bin/ng-update-message.js
+
+        npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/@angular/cli/node_modules/fsevents):
+        npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+        + @angular/cli@6.0.8
+        updated 4 packages in 9.633s
+        ashburndave@dphnuc4:~$ 
+
+        ashburndave@dphnuc4:~$ ng --version
+
+             _                      _                 ____ _     ___
+            / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+           / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+          / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+         /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                        |___/
+            
+
+        Angular CLI: 6.0.8
+        Node: 10.1.0
+        OS: linux x64
+        Angular: 
+        ... 
+
+        Package                      Version
+        ------------------------------------------------------
+        @angular-devkit/architect    0.6.8
+        @angular-devkit/core         0.6.8
+        @angular-devkit/schematics   0.6.8
+        @schematics/angular          0.6.8
+        @schematics/update           0.6.8
+        rxjs                         6.2.2
+        typescript                   2.7.2
+            
+        ashburndave@dphnuc4:~$ 
 
