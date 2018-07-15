@@ -497,3 +497,92 @@ Install (or reinstall) Angular 5 globally before creating a new Angular 6 projec
         On branch master
         nothing to commit, working tree clean
         ashburndave@dphnuc4:/tmp/testproj$ 
+
+## using git with an angular project created with angular-cli
+
+        ng new myang6app
+        cd myang6app
+        git remote add origin git@github.com:ashburndev/myng6app.git
+        git push -u origin master
+
+        ashburndave@dphnuc4:~/ng6projects/myng6app$ git remote add origin git@github.com:ashburndev/myng6app.git
+        ashburndave@dphnuc4:~/ng6projects/myng6app$ git push -u origin master
+        Counting objects: 38, done.
+        Delta compression using up to 4 threads.
+        Compressing objects: 100% (36/36), done.
+        Writing objects: 100% (38/38), 93.35 KiB | 4.45 MiB/s, done.
+        Total 38 (delta 1), reused 0 (delta 0)
+        remote: Resolving deltas: 100% (1/1), done.
+        To github.com:ashburndev/myng6app.git
+         * [new branch]      master -> master
+        Branch master set up to track remote branch master from origin.
+        ashburndave@dphnuc4:~/ng6projects/myng6app$ 
+
+I did not expect that everything created by angular-cli would already be commited and pushed to the .git created by angular-cli ... an alternative to the above is as follows
+
+        ng new myang6app --skip-git
+        cd myang6app
+        git init
+        git add .
+        git commit -a -m "first commit"
+        git push
+
+As a test, I deleted everything and started over again.  After entering this command ...
+
+        ng new myang6app
+
+... I entered the commands below ... and I ended up with the desired content in the github repository
+
+        ashburndave@dphnuc4:~/ng6projects$ cd myng6app/
+        ashburndave@dphnuc4:~/ng6projects/myng6app$ git status
+        On branch master
+        nothing to commit, working tree clean
+        ashburndave@dphnuc4:~/ng6projects/myng6app$ git add .
+        ashburndave@dphnuc4:~/ng6projects/myng6app$ git commit -a -m "first commit"
+        On branch master
+        nothing to commit, working tree clean
+        ashburndave@dphnuc4:~/ng6projects/myng6app$ git remote add origin git@github.com:ashburndev/myng6app.git
+        ashburndave@dphnuc4:~/ng6projects/myng6app$ git push -u origin master
+        Counting objects: 38, done.
+        Delta compression using up to 4 threads.
+        Compressing objects: 100% (36/36), done.
+        Writing objects: 100% (38/38), 93.41 KiB | 4.67 MiB/s, done.
+        Total 38 (delta 1), reused 0 (delta 0)
+        remote: Resolving deltas: 100% (1/1), done.
+        To github.com:ashburndev/myng6app.git
+         * [new branch]      master -> master
+        Branch master set up to track remote branch master from origin.
+        ashburndave@dphnuc4:~/ng6projects/myng6app$ 
+
+As a further experiment, I tried to clone the repository created above.
+
+        ashburndave@dphnuc4:~$ cd /tmp
+        ashburndave@dphnuc4:/tmp$ git clone git@github.com:ashburndev/myng6app.git
+        Cloning into 'myng6app'...
+        remote: Counting objects: 38, done.
+        remote: Compressing objects: 100% (35/35), done.
+        remote: Total 38 (delta 1), reused 38 (delta 1), pack-reused 0
+        Receiving objects: 100% (38/38), 93.41 KiB | 2.92 MiB/s, done.
+        Resolving deltas: 100% (1/1), done.
+        ashburndave@dphnuc4:/tmp$ 
+        ashburndave@dphnuc4:/tmp$ cd myng6app/
+        ashburndave@dphnuc4:/tmp/myng6app$ ng serve
+        Could not find module "@angular-devkit/build-angular" from "/tmp/myng6app".
+        Error: Could not find module "@angular-devkit/build-angular" from "/tmp/myng6app".
+            at Object.resolve (/home/ashburndave/.nvm/versions/node/v10.1.0/lib/node_modules/@angular/cli/node_modules/@angular-devkit/core/node/resolve.js:141:11)
+            at Observable.rxjs_1.Observable [as _subscribe] (/home/ashburndave/.nvm/versions/node/v10.1.0/lib/node_modules/@angular/cli/node_modules/@angular-devkit/architect/src/architect.js:132:40)
+            at Observable._trySubscribe (/home/ashburndave/.nvm/versions/node/v10.1.0/lib/node_modules/@angular/cli/node_modules/rxjs/internal/Observable.js:43:25)
+            at Observable.subscribe (/home/ashburndave/.nvm/versions/node/v10.1.0/lib/node_modules/@angular/cli/node_modules/rxjs/internal/Observable.js:29:22)
+            at DoOperator.call (/home/ashburndave/.nvm/versions/node/v10.1.0/lib/node_modules/@angular/cli/node_modules/rxjs/internal/operators/tap.js:29:23)
+            at Observable.subscribe (/home/ashburndave/.nvm/versions/node/v10.1.0/lib/node_modules/@angular/cli/node_modules/rxjs/internal/Observable.js:24:22)
+            at /home/ashburndave/.nvm/versions/node/v10.1.0/lib/node_modules/@angular/cli/node_modules/rxjs/internal/util/subscribeTo.js:22:31
+            at Object.subscribeToResult (/home/ashburndave/.nvm/versions/node/v10.1.0/lib/node_modules/@angular/cli/node_modules/rxjs/internal/util/subscribeToResult.js:7:45)
+            at MergeMapSubscriber._innerSub (/home/ashburndave/.nvm/versions/node/v10.1.0/lib/node_modules/@angular/cli/node_modules/rxjs/internal/operators/mergeMap.js:75:38)
+            at MergeMapSubscriber._tryNext (/home/ashburndave/.nvm/versions/node/v10.1.0/lib/node_modules/@angular/cli/node_modules/rxjs/internal/operators/mergeMap.js:72:14)
+        ashburndave@dphnuc4:/tmp/myng6app$ 
+
+But if issue the commands below, everything works as expected
+
+        npm install
+        ng serve
+
