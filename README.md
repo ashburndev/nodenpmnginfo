@@ -368,6 +368,33 @@ Install (or reinstall) Angular 5 globally before creating a new Angular 6 projec
         .DS_Store
         Thumbs.db
         ashburndave@dphnuc4:~/ng6projects/myng6app$ 
+        ashburndave@dphnuc4:~/ng6projects/myng6app$ tree src
+        src
+        ├── app
+        │   ├── app.component.css
+        │   ├── app.component.html
+        │   ├── app.component.spec.ts
+        │   ├── app.component.ts
+        │   └── app.module.ts
+        ├── assets
+        ├── browserslist
+        ├── environments
+        │   ├── environment.prod.ts
+        │   └── environment.ts
+        ├── favicon.ico
+        ├── index.html
+        ├── karma.conf.js
+        ├── main.ts
+        ├── polyfills.ts
+        ├── styles.css
+        ├── test.ts
+        ├── tsconfig.app.json
+        ├── tsconfig.spec.json
+        └── tslint.json
+        
+        3 directories, 18 files
+        ashburndave@dphnuc4:~/ng6projects/myng6app$ 
+
 
 
 ## sample angular 5 project (created with angular-cli)
