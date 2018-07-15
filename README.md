@@ -8,14 +8,14 @@ Verify that you are running at least Node.js version 8.x or greater and npm vers
     v10.1.0
     ashburndave@dphnuc4:~$ npm --version
     5.6.0
-
+        
        ╭─────────────────────────────────────╮
        │                                     │
        │   Update available 5.6.0 → 6.1.0    │
        │     Run npm i -g npm to update      │
        │                                     │
        ╰─────────────────────────────────────╯
-    
+            
     ashburndave@dphnuc4:~$ 
     ashburndave@dphnuc4:~$ ng version
     The program 'ng' is currently not installed. You can install it by typing:
@@ -23,9 +23,9 @@ Verify that you are running at least Node.js version 8.x or greater and npm vers
     ashburndave@dphnuc4:~$ 
     ashburndave@dphnuc4:~$ 
     ashburndave@dphnuc4:~$ npm install -g @angular/cli
-
+        
     ashburndave@dphnuc4:~$ ng version
-
+        
          _                      _                 ____ _     ___
         / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
        / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
@@ -33,13 +33,13 @@ Verify that you are running at least Node.js version 8.x or greater and npm vers
      /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
                     |___/
         
-
+        
     Angular CLI: 6.0.8
     Node: 10.1.0
     OS: linux x64
     Angular: 
     ... 
-
+        
     Package                      Version
     ------------------------------------------------------
     @angular-devkit/architect    0.6.8
@@ -51,9 +51,9 @@ Verify that you are running at least Node.js version 8.x or greater and npm vers
     typescript                   2.7.2
         
     ashburndave@dphnuc4:~$ 
-
+        
     ashburndave@dphnuc4:~/ngprojects$ ng mew hello-cli
-
+        
     added 1103 packages in 36.853s
         Successfully initialized git.
     ashburndave@dphnuc4:~/ngprojects$ 
@@ -78,31 +78,31 @@ Verify that you are running at least Node.js version 8.x or greater and npm vers
     ashburndave@dphnuc4:~/ngprojects/hello-cli$ 
     ashburndave@dphnuc4:~/ngprojects/hello-cli$ cat README.md 
     # HelloCli
-
+        
     This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
-
+        
     ## Development server
-
+        
     Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
+        
     ## Code scaffolding
-
+        
     Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
+        
     ## Build
-
+        
     Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
+        
     ## Running unit tests
-
+        
     Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
+        
     ## Running end-to-end tests
-
+        
     Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
+        
     ## Further help
-
+        
     To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
     ashburndave@dphnuc4:~/ngprojects/hello-cli$ 
     ashburndave@dphnuc4:~/ngprojects/hello-cli$ cat package.json 
@@ -191,7 +191,7 @@ I could have downloaded the node distribution from these URLs (the first is for 
 
     https://nodejs.org/en/download/
     https://nodejs.org/en/download/current/
-
+        
     ashburndave@dphnuc4:~/Downloads$ ls -latr | tail
     -rw-rw-r--  1 ashburndave ashburndave         40 Jul  8 09:46 apache-maven-3.5.4-bin.zip.sha1
     -rw-rw-r--  1 ashburndave ashburndave        236 Jul  8 09:46 apache-maven-3.5.4-bin.zip.asc
@@ -205,7 +205,6 @@ I could have downloaded the node distribution from these URLs (the first is for 
     drwxr-xr-x  2 ashburndave ashburndave      20480 Jul 11 08:07 .
     ashburndave@dphnuc4:~/Downloads$ 
 
-
 The web page http://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm suggests these steps for installing Node.js
 
         $ cd /tmp
@@ -214,7 +213,7 @@ The web page http://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm s
         $ mkdir -p /usr/local/nodejs
         $ mv node-v6.3.1-linux-x64/* /usr/local/nodejs
 
-The web page https://blog.angularindepth.com/angular-5-or-angular-6-yes-please-d71b08b5e59b suggestions about a single development environment for both Angular 6 and Angular 5
+The web page https://blog.angularindepth.com/angular-5-or-angular-6-yes-please-d71b08b5e59b has suggestions about a single development environment for both Angular 6 and Angular 5 development.  I had problems installing angular-cli 5 after having first installed angular-cli 6.
 
 Install (or reinstall) Angular 6 globally before creating a new Angular 6 project with angular-cli
 
@@ -251,31 +250,31 @@ Install (or reinstall) Angular 5 globally before creating a new Angular 6 projec
         ashburndave@dphnuc4:~/ng6projects/myng6app$ 
         ashburndave@dphnuc4:~/ng6projects/myng6app$ cat README.md
         # Myng6app
-
+        
         This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
-
+        
         ## Development server
-
+        
         Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
+        
         ## Code scaffolding
-
+        
         Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
+        
         ## Build
-
+        
         Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
+        
         ## Running unit tests
-
+        
         Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
+        
         ## Running end-to-end tests
-
+        
         Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
+        
         ## Further help
-
+        
         To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
         ashburndave@dphnuc4:~/ng6projects/myng6app$ 
         ashburndave@dphnuc4:~/ng6projects/myng6app$ cat package.json
@@ -330,15 +329,15 @@ Install (or reinstall) Angular 5 globally before creating a new Angular 6 projec
         ashburndave@dphnuc4:~/ng6projects/myng6app$ 
         ashburndave@dphnuc4:~/ng6projects/myng6app$ cat .gitignore 
         # See http://help.github.com/ignore-files/ for more about ignoring files.
-
+        
         # compiled output
         /dist
         /tmp
         /out-tsc
-
+        
         # dependencies
         /node_modules
-
+        
         # IDEs and editors
         /.idea
         .project
@@ -347,14 +346,14 @@ Install (or reinstall) Angular 5 globally before creating a new Angular 6 projec
         *.launch
         .settings/
         *.sublime-workspace
-
+        
         # IDE - VSCode
         .vscode/*
         !.vscode/settings.json
         !.vscode/tasks.json
         !.vscode/launch.json
         !.vscode/extensions.json
-
+        
         # misc
         /.sass-cache
         /connect.lock
@@ -364,7 +363,7 @@ Install (or reinstall) Angular 5 globally before creating a new Angular 6 projec
         yarn-error.log
         testem.log
         /typings
-
+        
         # System Files
         .DS_Store
         Thumbs.db
@@ -377,7 +376,7 @@ Install (or reinstall) Angular 5 globally before creating a new Angular 6 projec
         npm WARN registry Using stale data from https://registry.npmjs.org/ because the host is inaccessible -- are you offline?
         npm WARN registry Using stale package data from https://registry.npmjs.org/ due to a request error during revalidation.
         [..................] \ fetchMetadata: sill fetchPackageMetaData error for node-modules-path@^1.0.0 request to https://registry.npmjs.org/node-modules-path fail
-
+        
         ashburndave@dphnuc4:~$ 
         ashburndave@dphnuc4:~$ npm install -g @angular/cli@1
         npm WARN registry Using stale data from https://registry.npmjs.org/ because the host is inaccessible -- are you offline?
@@ -390,7 +389,7 @@ Install (or reinstall) Angular 5 globally before creating a new Angular 6 projec
         npm ERR! network 
         npm ERR! network If you are behind a proxy, please make sure that the
         npm ERR! network 'proxy' config is set properly.  See: 'npm help config'
-
+        
         npm ERR! A complete log of this run can be found in:
         npm ERR!     /home/ashburndave/.npm/_logs/2018-07-15T13_05_34_110Z-debug.log
         ashburndave@dphnuc4:~$ 
@@ -404,19 +403,19 @@ Install (or reinstall) Angular 5 globally before creating a new Angular 6 projec
         ashburndave@dphnuc4:~$ 
         ashburndave@dphnuc4:~$ npm install -g @angular/cli@6
         /home/ashburndave/.nvm/versions/node/v10.1.0/bin/ng -> /home/ashburndave/.nvm/versions/node/v10.1.0/lib/node_modules/@angular/cli/bin/ng
-
+        
         > @angular/cli@6.0.8 postinstall /home/ashburndave/.nvm/versions/node/v10.1.0/lib/node_modules/@angular/cli
         > node ./bin/ng-update-message.js
-
+        
         npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/@angular/cli/node_modules/fsevents):
         npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
-
+        
         + @angular/cli@6.0.8
         updated 4 packages in 9.633s
         ashburndave@dphnuc4:~$ 
-
+        
         ashburndave@dphnuc4:~$ ng --version
-
+        
              _                      _                 ____ _     ___
             / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
            / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
@@ -424,13 +423,13 @@ Install (or reinstall) Angular 5 globally before creating a new Angular 6 projec
          /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
                         |___/
             
-
+        
         Angular CLI: 6.0.8
         Node: 10.1.0
         OS: linux x64
         Angular: 
         ... 
-
+        
         Package                      Version
         ------------------------------------------------------
         @angular-devkit/architect    0.6.8
@@ -443,3 +442,58 @@ Install (or reinstall) Angular 5 globally before creating a new Angular 6 projec
             
         ashburndave@dphnuc4:~$ 
 
+## experiment with git
+
+        ashburndave@dphnuc4:/tmp$ mkdir testproj
+        ashburndave@dphnuc4:/tmp$ cd testproj
+        ashburndave@dphnuc4:/tmp/testproj$ git status
+        fatal: Not a git repository (or any of the parent directories): .git
+        ashburndave@dphnuc4:/tmp/testproj$ 
+        ashburndave@dphnuc4:/tmp/testproj$ git init
+        Initialized empty Git repository in /tmp/testproj/.git/
+        ashburndave@dphnuc4:/tmp/testproj$ 
+        ashburndave@dphnuc4:/tmp/testproj$ git status
+        On branch master
+        
+        No commits yet
+        
+        nothing to commit (create/copy files and use "git add" to track)
+        ashburndave@dphnuc4:/tmp/testproj$ date > foo.txt
+        ashburndave@dphnuc4:/tmp/testproj$ date > bar.txt
+        ashburndave@dphnuc4:/tmp/testproj$ date > baz.txt
+        ashburndave@dphnuc4:/tmp/testproj$ git status
+        On branch master
+        
+        No commits yet
+        
+        Untracked files:
+          (use "git add <file>..." to include in what will be committed)
+        
+            bar.txt
+            baz.txt
+            foo.txt
+        
+        nothing added to commit but untracked files present (use "git add" to track)
+        ashburndave@dphnuc4:/tmp/testproj$ git add .
+        ashburndave@dphnuc4:/tmp/testproj$ git status
+        On branch master
+        
+        No commits yet
+        
+        Changes to be committed:
+          (use "git rm --cached <file>..." to unstage)
+        
+            new file:   bar.txt
+            new file:   baz.txt
+            new file:   foo.txt
+        
+        ashburndave@dphnuc4:/tmp/testproj$ git commit -a -m "first commit"
+        [master (root-commit) b106b46] first commit
+         3 files changed, 3 insertions(+)
+         create mode 100644 bar.txt
+         create mode 100644 baz.txt
+         create mode 100644 foo.txt
+        ashburndave@dphnuc4:/tmp/testproj$ git status
+        On branch master
+        nothing to commit, working tree clean
+        ashburndave@dphnuc4:/tmp/testproj$ 
