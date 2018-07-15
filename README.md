@@ -213,7 +213,7 @@ The web page http://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm s
         $ mkdir -p /usr/local/nodejs
         $ mv node-v6.3.1-linux-x64/* /usr/local/nodejs
 
-The web page https://blog.angularindepth.com/angular-5-or-angular-6-yes-please-d71b08b5e59b has suggestions about a single development environment for both Angular 6 and Angular 5 development.  I had problems installing angular-cli 5 after having first installed angular-cli 6.
+In the web page https://blog.angularindepth.com/angular-5-or-angular-6-yes-please-d71b08b5e59b Todd Palmer has suggestions about a single development environment for both Angular 6 and Angular 5 development.  I had problems installing angular-cli 5 after having first installed angular-cli 6.
 
 Install (or reinstall) Angular 6 globally before creating a new Angular 6 project with angular-cli
 
@@ -581,7 +581,7 @@ As a further experiment, I tried to clone the repository created above.
             at MergeMapSubscriber._tryNext (/home/ashburndave/.nvm/versions/node/v10.1.0/lib/node_modules/@angular/cli/node_modules/rxjs/internal/operators/mergeMap.js:72:14)
         ashburndave@dphnuc4:/tmp/myng6app$ 
 
-But if issue the commands below, everything works as expected
+But if I issue the commands below, everything works without any problems
 
         npm install
         ng serve
